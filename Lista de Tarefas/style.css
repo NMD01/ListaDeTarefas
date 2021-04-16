@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.tamanho{
+    max-width: 1200px;
+    background-color: aquamarine;
+    text-align: center;
+    margin: auto;
+    
+}
+.res{
+    background-color: grey;
+    margin: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    border-radius: 75px;
+}
