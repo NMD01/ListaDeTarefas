@@ -18,4 +18,23 @@ body{
     color: white;
     text-align: left;
     border-radius: 75px;
+    border: 2px solid grey;
+}
+
+.botaoPadrao{
+    float: right;
+    text-transform: uppercase;
+}
+
+.botaoConcluir{
+    background-color: rgba(148, 144, 144, 0.575);
+    margin: 20px;
+    text-transform: uppercase;
+    padding: 20px;
+    color: white;
+    text-align: left;
+    border-radius: 75px;
+    text-decoration: line-through;
+    border: 2px solid white;
+    
 }
