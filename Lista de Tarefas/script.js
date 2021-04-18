@@ -13,7 +13,7 @@ if(tarefas == 0){
     
     limpar.style.display = "none"
     h2.style.display = "none"
-}//esconde o botão limpar tudo
+}//esconde o botão limpar tudo e o H2
 
   
 console.log(tarefas)
@@ -66,13 +66,20 @@ for(i=0; i < tarefas.length; i++){
     excluir.value = "Excluir"
     resposta.appendChild(excluir)
     excluir.addEventListener("click",apagar = function(){
-        res.removeChild(resposta)
-        localStorage.setItem("resposta",JSON.stringify(res))
-        //location.reload()
-    
-    /* Eu tentei de todos os jeitos retirar um elemento especifico da lista (tarefas que está no localstorage) mas não consegui, ele sempre tirava o ultimo item adicionado.
-    Então usando o removeChild eu consegui remover a div q aparecia os item da lista, mas não consigo salvar essas alterações no local storage, se recarregar o item da lista retorna
-      */
+        
+
+        //res.removeChild(resposta)
+
+        /* Eu tentei de todos os jeitos retirar um elemento especifico da lista (tarefas que está no localstorage) mas não consegui, ele sempre tirava o ultimo item adicionado.
+        Então usando o removeChild eu consegui remover a div q aparecia os item da lista, mas não consigo salvar essas alterações no local storage, se recarregar a pagina o item da lista retorna
+            */
+
+
+        tarefas.splice(resposta.id, 1)
+        localStorage.setItem("tarefas", JSON.stringify(tarefas))
+        location.reload()
+
+     /* ESQUECE O ULTIMO COMENTÁRIO, FINALMENTE CONSEGUI. EU TO MUITO FELIZ AAAAAAAAEEEEEE!!!!!!!! */
     })
     
     
