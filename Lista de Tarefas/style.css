@@ -1,16 +1,81 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
-.tamanho{
+header{
     max-width: 1200px;
-    background-color: aquamarine;
+    color: black;
+    background-color: #48c4fd;
     text-align: center;
     margin: auto;
-    
+    margin-top: 10vh;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 10px 10px 0px 0px;
+    border-color: #48c4fd;
+}
+h1{
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 30px;
+    transform: translateY(10px);
+}
+section{
+    color: white;
+    max-width: 1200px;
+    background-color: #b7effd;
+    text-align: center;
+    margin: auto;
+    border: 2px solid white;
+    border-top: none;
+    padding-top: 30px;
+    margin-bottom: 10vh;
+    border-radius: 0px 0px 10px 10px;
+    border-color: #b7effd;
+}
+.dados{
+    background-color: white;
+    border: none;
+    padding: 10px;
+    /* border-bottom: 1px solid black; */
+    width: 50%;
+    margin-bottom: 40px;
+    color: black;
+    font-size: 19px;
+    border-radius: 75px;
+}
+#nome{
+    width: 20%;
+    margin-right: 40px;
+}
+::placeholder{
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 13px;
+}
+#adicionar{
+    color: white;
+    background-color: #10c210;
+    border: none;
+    padding: 15px;
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+#adicionar:hover{
+    background-color: green;
+}
+h2{
+    color: black;
+    text-transform: uppercase;
 }
 .res{
+    
     background-color: grey;
     margin: 20px;
     text-transform: uppercase;
@@ -24,10 +89,16 @@ body{
 .botaoPadrao{
     float: right;
     text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    margin-left: 10px;
+    transform: translateY(-24%);
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .botaoConcluir{
-    background-color: rgba(148, 144, 144, 0.575);
+    background-color: rgba(151, 150, 150, 0.712);
     margin: 20px;
     text-transform: uppercase;
     padding: 20px;
@@ -37,4 +108,41 @@ body{
     text-decoration: line-through;
     border: 2px solid white;
     
+}
+.excluir{
+    background-color: red;
+    color: white;
+}
+.excluir:hover{
+    background-color: #bb0505;
+}
+.concluir{
+    background-color: #10c210;
+    color: white;
+}
+.concluir:hover{
+    background-color: green;
+}
+.refazer{
+    background-color: #118ff7;
+    color: white;
+}
+.refazer:hover{
+    background-color:  #0f70c0;
+}
+.limpar{
+    background-color: red;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.limpar:hover{
+    background-color: #bb0505;
 }
