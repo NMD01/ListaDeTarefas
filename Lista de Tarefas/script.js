@@ -51,10 +51,19 @@ for(i=0; i < tarefas.length; i++){
 
 
     let resposta = document.createElement("div")
-    resposta.innerHTML += `<strong>${tarefas[i].nome}:</strong> ${tarefas[i].fazer}`
     resposta.setAttribute("class","res")
     resposta.setAttribute("id",length++)
-    res.appendChild(resposta) 
+    res.appendChild(resposta)
+    
+    let titulo = document.createElement("h2")
+    titulo.innerHTML = `${tarefas[i].nome}`
+    titulo.setAttribute("class","titulo")
+    resposta.appendChild(titulo)
+
+    let conteudo = document.createElement("p")
+    conteudo.innerHTML = `${tarefas[i].fazer}`
+    conteudo.setAttribute("class", "conteudo")
+    resposta.appendChild(conteudo)
     //vai criar uma div para mostrar os items dentro do array "tarefas"
     
     
@@ -93,7 +102,7 @@ for(i=0; i < tarefas.length; i++){
 
         if(concluir.value === "concluir"){
             concluir.value = "Refazer"
-            resposta.setAttribute("class", "botaoConcluir")
+            resposta.setAttribute("class", "botaoConcluir ")
             concluir.setAttribute("class","refazer botaoPadrao")
         }else{
             resposta.setAttribute("class", "res")

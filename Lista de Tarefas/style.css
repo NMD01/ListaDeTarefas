@@ -70,7 +70,7 @@ section{
 #adicionar:hover{
     background-color: green;
 }
-h2{
+.text{
     color: black;
     text-transform: uppercase;
 }
@@ -79,11 +79,28 @@ h2{
     background-color: grey;
     margin: 20px;
     text-transform: uppercase;
-    padding: 20px;
+    padding: 5px;
     color: white;
     text-align: left;
     border-radius: 75px;
     border: 2px solid grey;
+}
+.titulo{
+    text-align: center;
+    padding-top: 1px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: underline;
+}
+.conteudo{
+    text-align: start;
+    /* background-color: red; */
+    max-width: 79%;
+    display: inline-block;
+    margin-left: 25px;
+    margin-top: 1px;
+    
 }
 
 .botaoPadrao{
@@ -92,7 +109,9 @@ h2{
     border: none;
     padding: 10px;
     margin-left: 10px;
-    transform: translateY(-24%);
+    /* transform: translateY(-170%);
+    transform: translateX(-30px); */
+    transform: translate(-30px, -50%);
     border-radius: 10px;
     cursor: pointer;
 }
@@ -101,14 +120,32 @@ h2{
     background-color: rgba(151, 150, 150, 0.712);
     margin: 20px;
     text-transform: uppercase;
-    padding: 20px;
-    color: white;
+    padding: 5px;
+    /* color: white; */
     text-align: left;
     border-radius: 75px;
     text-decoration: line-through;
-    border: 2px solid white;
-    
+    border: 2px solid green;
+    color: red;
+    text-shadow: 2px px 10px black;
 }
+
+.botaoConcluir h2{
+    text-transform: uppercase;
+    border-radius: 75px;
+    text-decoration: line-through;
+    color: green;
+    text-shadow: 2px px 10px black;
+}
+
+.botaoConcluir p{
+    text-transform: uppercase;
+    border-radius: 75px;
+    text-decoration: line-through;
+    color: green;
+    text-shadow: 2px px 10px black;
+}
+
 .excluir{
     background-color: red;
     color: white;
@@ -119,6 +156,8 @@ h2{
 .concluir{
     background-color: #10c210;
     color: white;
+    
+    
 }
 .concluir:hover{
     background-color: green;
@@ -142,6 +181,7 @@ h2{
     margin-top: 30px;
     font-weight: bold;
     cursor: pointer;
+    
 }
 .limpar:hover{
     background-color: #bb0505;
